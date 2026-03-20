@@ -21,7 +21,7 @@
   <node name="spawn_urdf"
         pkg="gazebo_ros"
         type="spawn_model"
-        args="-urdf -param robot_description -model jaka_zu12_2f85 -z 0.05"
+        args="-urdf -param robot_description -model jaka_zu12_2f85 -z 0.0"
         output="screen" />
 
   <node name="controller_spawner"
@@ -29,5 +29,5 @@
         type="spawner"
         respawn="false"
         output="screen"
-        args="joint_state_controller arm_controller"/>
+        args="joint_state_controller arm_controller gripper_controller"/>
 </launch>

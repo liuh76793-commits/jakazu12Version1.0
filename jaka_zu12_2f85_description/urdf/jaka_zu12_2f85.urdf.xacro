@@ -411,7 +411,7 @@
   <joint name="jaka_link6_to_robotiq" type="fixed">
     <parent link="Link_6"/>
     <child link="robotiq_arg2f_base_link"/>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0.01" rpy="0 0 0"/>
   </joint>
 
   <!-- Optional tool frame for later MoveIt / grasp planning -->
