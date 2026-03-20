@@ -1,0 +1,5 @@
+<launch>
+  <param name="moveit_controller_manager" value="moveit_simple_controller_manager/MoveItSimpleControllerManager" />
+  <rosparam file="$(find jaka_zu12_2f85_moveit_config)/config/simple_moveit_controllers.yaml" />
+  <rosparam file="$(find jaka_zu12_2f85_moveit_config)/config/ros_controllers.yaml" />
+</launch>
