@@ -11,14 +11,22 @@ arm_controller:
     - joint_4
     - joint_5
     - joint_6
+  constraints:
+    goal_time: 0.5   # 只要到达目标附近 0.5 秒后，立刻判定结束，不准拖延
+    stopped_velocity_tolerance: 5.0  # 允许极大的“微震”速度，只要不抽风上天就算它停稳了
+    joint_1: {goal: 1.5}
+    joint_2: {goal: 1.5}
+    joint_3: {goal: 1.5}
+    joint_4: {goal: 1.5}
+    joint_5: {goal: 1.5}
+    joint_6: {goal: 1.5}
+
 gripper_controller:
   type: position_controllers/JointTrajectoryController
   joints:
     - finger_joint
   constraints:
     goal_time: 2.0
-    stopped_velocity_tolerance: 0.01
+    stopped_velocity_tolerance: 0.05
     finger_joint: {trajectory: 0.5, goal: 0.8}
-  stop_trajectory_duration: 0.5
-  state_publish_rate: 25
-  action_monitor_rate: 10
+
