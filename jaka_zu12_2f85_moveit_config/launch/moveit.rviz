@@ -51,7 +51,7 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Acceleration_Scaling_Factor: 0.5
+    - Acceleration_Scaling_Factor: 0.1
       Class: moveit_rviz_plugin/MotionPlanning
       Enabled: true
       JointsTab_Use_Radians: false
@@ -204,7 +204,7 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: gripper
+        Planning Group: arm
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
@@ -329,7 +329,7 @@ Visualization Manager:
         Show Robot Collision: false
         Show Robot Visual: true
       Value: true
-      Velocity_Scaling_Factor: 0.5
+      Velocity_Scaling_Factor: 0.1
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -358,7 +358,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 5.396361827850342
+      Distance: 10
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -366,17 +366,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.7399228811264038
-        Y: 0.8597618937492371
-        Z: -0.2557947337627411
+        X: 0
+        Y: 0
+        Z: 0
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3703983426094055
+      Pitch: 0.785398006439209
       Target Frame: <Fixed Frame>
-      Yaw: 4.78856897354126
+      Yaw: 0.785398006439209
     Saved: ~
 Window Geometry:
   Displays:
@@ -398,5 +398,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1200
-  X: 253
-  Y: 161
+  X: 513
+  Y: 305
